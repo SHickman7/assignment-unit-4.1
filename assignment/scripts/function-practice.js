@@ -27,15 +27,22 @@ console.log('Expecting "Hello, Stephanie!"', helloName(name));
 
 
 // 3. Function to add two numbers together & return the result
-function addNumbers(firstNumber) {
+function addNumbers(firstNumber, secondNumber) {
+  console.log( 'In addNumbers');
   // return firstNumber + secondNumber;
+  return firstNumber + secondNumber;
 }
+
+console.log("Sum of 5 + 83", addNumbers(5,83));
 
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree() {
-
+function multiplyThree(numOne, numTwo, numThree) {
+  console.log('In multiplyThree')
+  return numOne * numTwo * numThree
 }
+
+console.log ( '5 x 3 x 15', multiplyThree(5, 3, 15));
 
 
 // 5. Function that will return true if a number is positive, 
