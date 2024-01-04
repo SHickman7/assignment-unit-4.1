@@ -49,12 +49,15 @@ console.log ( '5 x 3 x 15', multiplyThree(5, 3, 15));
 //    or greater than zero, and false otherwise
 function isPositive(number) {
   if (number > 0) {
-    return;
-  }
-  return;
+    return true;
+  } else
+  return false;
 }
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
+
+console.log ('Testing positive, expecting true', isPositive (15));
+console.log ('Testing 0 or below, expecting false', isPositive (-33));
 
 
 // 6. Function to return the _last_ item in an array. If the 
