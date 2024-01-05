@@ -77,9 +77,26 @@ console.log ('Empty array', getLast(anotherArray));
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
-function find(value, array) {
 
+
+
+let thisArray = [-15, -8, -4, 0, 3, 7, 18];
+let value = -4;
+let anotherValue = 125; 
+
+function find (value, thisArray) {
+  for (let i = 0; i < thisArray.length; i ++) {
+    if (thisArray [ i ] === value ) {
+      return true
+    }
+  }
+  return false;
 }
+
+console.log ('Expecting true', find( value, thisArray));
+console.log ('Expecting false', find (anotherValue, thisArray));
+
+
 
 // ----------------------
 // Stretch Goals
