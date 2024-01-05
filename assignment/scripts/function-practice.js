@@ -103,9 +103,22 @@ console.log ('Expecting false', find (anotherValue, thisArray));
 // ----------------------
 // 8. Function to check if a letter is the first letter in a 
 //    string. Return true if it is, and false otherwise
-function isFirstLetter(letter, string) {
 
-}
+
+let string = "stephanie";
+
+
+function isFirstLetter(letter, string) {
+  let firstChar = string.charAt(0);
+
+  if (firstChar === letter){
+    return true
+  }
+  return false
+  }
+
+console.log('Expecting true:', isFirstLetter('s', string));
+console.log ('Expecting false:', isFirstLetter('e', string));
 
 
 // 9. Function to return the sum of all numbers in an array
