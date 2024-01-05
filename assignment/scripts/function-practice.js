@@ -105,9 +105,6 @@ console.log ('Expecting false', find (anotherValue, thisArray));
 //    string. Return true if it is, and false otherwise
 
 
-let string = "stephanie";
-
-
 function isFirstLetter(letter, string) {
   let firstChar = string.charAt(0);
 
@@ -117,17 +114,26 @@ function isFirstLetter(letter, string) {
   return false
   }
 
+let string = "stephanie";
 console.log('Expecting true:', isFirstLetter('s', string));
 console.log ('Expecting false:', isFirstLetter('e', string));
 
 
+let stretchArray = [ 5, 15, 45, 60, 80];
+
 // 9. Function to return the sum of all numbers in an array
-function sumAll(array) {
+function sumAll(stretchArray) {
   let sum = 0;
   // TODO: loop to add items
+    for ( let i = 0; i < stretchArray.length; i++){
+      sum += stretchArray[i];
+    }
 
   // TODO: return the sum
+    return sum;
 }
+
+console.log ('Expecting 205:', sumAll(stretchArray));
 
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
