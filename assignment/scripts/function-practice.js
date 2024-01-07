@@ -138,9 +138,17 @@ console.log ('Expecting 205:', sumAll(stretchArray));
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
-function allPositive() {
 
-}
+let inputArray = [ -42, -17, -5, 2, 15, 24, 72];
+let newArray = [];
+
+function allPositive() {
+  for (let i = 0; i < inputArray.length; i++){
+    if (inputArray[i] > 0)
+    newArray.push(inputArray[i]); 
+   } return newArray;
+  }
+ console.log ("The values of the newArray are:", allPositive());
 
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
